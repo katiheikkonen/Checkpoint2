@@ -21,7 +21,6 @@ def get_and_write_data(jsondata, file):
 
 get_and_write_data(data, 'checkpoint.txt')
 
-
 #CREATE BUCKET
 
 def create_bucket(bucket_name, region=None):
