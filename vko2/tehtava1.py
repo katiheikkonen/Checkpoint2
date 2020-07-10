@@ -1,6 +1,9 @@
 #  GET AND WRITE JSON DATA
 
 import requests
+import logging
+import boto3
+from botocore.exceptions import ClientError
 
 r = requests.get('https://2ri98gd9i4.execute-api.us-east-1.amazonaws.com/dev/academy-checkpoint2-json')
 data = r.json()
@@ -18,10 +21,6 @@ def get_and_write_data(jsondata, file):
 
 get_and_write_data(data, 'checkpoint.txt')
 
-
-import logging
-import boto3
-from botocore.exceptions import ClientError
 
 #CREATE BUCKET
 
